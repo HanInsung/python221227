@@ -9,6 +9,8 @@ class Person:
 
 #2) Creation Instance copy 
 p1 = Person()
+p2 = Person()
 
 #3) Call Method
 p1.print()
+p2.print()
