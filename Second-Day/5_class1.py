@@ -11,6 +11,11 @@ class Person:
 p1 = Person()
 p2 = Person()
 
+p1.name = "Han In Sung!"
 #3) Call Method
 p1.print()
 p2.print()
+#실행시간에 추가
+Person.title = "new title"
+print(p1.title)
+print(Person.title)
