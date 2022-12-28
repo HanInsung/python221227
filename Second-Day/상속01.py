@@ -22,4 +22,7 @@ s = Student("이순신", "010-111-1234", "컴공", "991122")
 print(p.__dict__)
 print(s.__dict__)
 
+p.printInfo()
+s.printInfo()
+
 
