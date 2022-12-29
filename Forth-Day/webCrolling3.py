@@ -3,7 +3,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import re
 
-f_handle = open("./webtoon.txt","wt", encoding="utf-8")
+f_handle = open(".\webtoon.txt","wt", encoding="utf-8")
 
 for i in range(1,6):
     url = "http://comic.naver.com/webtoon/list.nhn?titleId=20853&weekday=fri&page=" + str(i)
