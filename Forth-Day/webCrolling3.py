@@ -3,7 +3,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import re
 
-f_handle = open(".\webtoon.txt","wt", encoding="utf-8")
+f_handle = open(".\\Forth-Day\\webtoon.txt","wt", encoding="utf-8")
 
 for i in range(1,6):
     url = "http://comic.naver.com/webtoon/list.nhn?titleId=20853&weekday=fri&page=" + str(i)
@@ -19,13 +19,16 @@ for i in range(1,6):
     
 
     #carot = re.compile("^.+", re.M)
-
+    
     for item in cartoons:
         title = item.find("a").text
         link = item.find("a")["href"]
         title_item = title.split("<")
         title_item = title_item[1][:-1]
-        print(title_item)
+        #m = re.search('<(.*?)>', title_item)
+        #print (m.group(1))
+
+        print (title_item)
         f_handle.write(title + "\n")
 
         #print(link)
