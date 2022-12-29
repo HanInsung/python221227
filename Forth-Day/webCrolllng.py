@@ -16,7 +16,15 @@ soup = BeautifulSoup(page,"html.parser")
 #print(soup.find_all("p"))
 
 #첫번째 <p>만 검색
-print(soup.find("p"))
+#print(soup.find("p"))
 
+#조건 <p class=outer-text> //class_ : class가 키워드라 인자명으로 표기
+#print( soup.find_all("p", class_='outer-text'))
+
+#내부컨텐츠만 출력
+
+for item in soup.find_all("p"):
+    title = item.text.strip().replace("\n","")
+    print(title)
 
 
