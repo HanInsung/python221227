@@ -49,7 +49,6 @@ class DemoForm(QMainWindow, form_class):
 
         f_handle.close()
             
-    
     def secondClick(self):
         self.label.setText("두번째 버튼")
 
